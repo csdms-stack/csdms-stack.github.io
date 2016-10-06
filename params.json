@@ -1,0 +1,6 @@
+{
+  "name": "The CSDMS Software Stack",
+  "tagline": "A CSDMS cookbook of software recipes",
+  "body": "### About CSDMS Stack\r\n\r\nCSDMS Stack is a GitHub organization that houses `conda` recipes. Each recipe builds a software package, which can be installed with the `conda` command, that together form the complete CSDMS software stack. There are two main types of repositories within the organization, each of which end with `-recipe`:\r\n\r\n1. _[model]_-recipe: These are recipes for community-contributed models.\r\n2. _[model]_-csdms-recipe: These are recipes for models that expose a BMI and that have wrapped so as they can be used within the CSDMS modeling framework, pymt.\r\n\r\nThe built distributions are upload to [anaconda.org/csdms](https://anaconda.org/csdms) and can be [installed with conda](http://conda.pydata.org/docs). For example, to install a `csdms-stack` package into an existing conda environment,\r\n\r\n```bash\r\n$ conda config --add channels csdms\r\n$ conda install <package-name>\r\n```\r\n\r\n### Contributing to CSDMS Stack\r\n\r\n### Report an issue with a package\r\n\r\n### Update a package\r\n\r\n### Add a recipe\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
