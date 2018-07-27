@@ -19,7 +19,30 @@
       <h3>
 <a id="about-csdms-stack" class="anchor" href="#about-csdms-stack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About CSDMS Stack</h3>
 
-<p>CSDMS Stack is a GitHub organization that houses <code>conda</code> recipes. Each recipe builds a software package, which can be installed with the <code>conda</code> command, that together form the complete CSDMS software stack. There are two main types of repositories within the organization, each of which end with <code>-recipe</code>:</p>
+<p>
+  CSDMS Stack is a GitHub organization that houses <code>conda</code> recipes
+  for Earth-surface related software.
+  Each recipe builds a single software package, which can be installed with the
+  <code>conda</code> command, that together form the complete CSDMS
+  software stack. Each repository automatically builds its own recipe
+  in a clean and repeatable way on Linux and Mac (and sometimes Windows).
+</p>
+
+<p>
+  The built distributions are uploaded to
+  <a href="https://anaconda.org/csdms-stack">anaconda.org/csdms-stack</a>
+  and can be <a href="http://conda.pydata.org/docs">installed with conda</a>.
+  For example, to install a <code>csdms-stack</code> package into an
+  existing conda environment,
+</p>
+
+<div class="highlight highlight-source-shell"><pre>$ conda config --add channels csdms-stack
+$ conda install <span class="pl-k">&lt;</span>package-name<span class="pl-k">&gt;</span></pre>
+</div>
+
+<p>
+  There are two main types of repositories within
+  the organization, each of which end with <code>-recipe</code>:</p>
 
 <ol>
 <li>
@@ -28,10 +51,6 @@
 <em>[model]</em>-csdms-recipe: These are recipes for models that expose a BMI and that have wrapped so as they can be used within the CSDMS modeling framework, pymt.</li>
 </ol>
 
-<p>The built distributions are upload to <a href="https://anaconda.org/csdms-stack">anaconda.org/csdms-stack</a> and can be <a href="http://conda.pydata.org/docs">installed with conda</a>. For example, to install a <code>csdms-stack</code> package into an existing conda environment,</p>
-
-<div class="highlight highlight-source-shell"><pre>$ conda config --add channels csdms-stack
-$ conda install <span class="pl-k">&lt;</span>package-name<span class="pl-k">&gt;</span></pre></div>
 
 <p>See our <a href="recipes.html">list of recipes</a> for a complete list of CSDMS components, models, and tools.</p>
 
